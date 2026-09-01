@@ -1,0 +1,1 @@
+Here you can get LT wheel loads of Single girder crane. SWL 1t, 2t, 3t, 5t, 7.5t & 10t with span range from 4m to 30m available. Estimated Box girder weight and crane weights are prepared based on experience and excel calculations done throughout my tenure. 
