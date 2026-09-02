@@ -17,6 +17,6 @@ with col2:
     st.write("Girder Design, Cost, etc - Coming soon")
 
 st.markdown("---")
-st.caption("Nagpur | Works on Mobile")
+st.caption("Gajanan Mahale | Pune")
 
 st.sidebar.success("Select a tool above")
