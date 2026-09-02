@@ -8,10 +8,15 @@ st.write("Welcome! All your crane calculators at one place.")
 
 col1, col2 = st.columns(2)
 with col1:
-    st.info("**1. Wheel Load Calc**\n\nSingle Girder M5 Wheel load with SG Table")
-    st.page_link("pages/1_Wheel_Load.py", label="Open Wheel Load", icon="🏗️")
-with col2:
-    st.info("**2. More Tools Coming...**\n\nGirder Design, Cost, etc")
+    st.subheader("🏗️ 1. Wheel Load Calc")
+    st.write("Single Girder M5 Wheel load with SG Table")
+    st.info("👉 Go to left sidebar and click on '1_Wheel_Load'")
     
+with col2:
+    st.subheader("🔧 More Tools")
+    st.write("Girder Design, Cost, etc - Coming soon")
+
 st.markdown("---")
 st.caption("Nagpur | Works on Mobile")
+
+st.sidebar.success("Select a tool above")
