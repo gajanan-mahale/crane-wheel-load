@@ -40,6 +40,8 @@ try:
     R_min_end = Live_Load * approach / span + crane_kg/2
     max_wheel = R_max_end / (wheels/2)
     min_wheel = R_min_end / (wheels/2)
+    Horiz_load = 0.05 * Live_Load
+    Longi_load = 0.05 * (crane_kg + swl_input)
 
     st.markdown("---")
     k1,k2,k3,k4 = st.columns(4)
@@ -48,8 +50,10 @@ try:
     k3.metric("Crab wt", f"{crab_kg:.0f} kg")
     k4.metric("Live_Load", f"{Live_Load:.0f} kg")
 
-    st.success(f"MAX LT Wheel = {max_wheel:.0f} kg")
-    st.info(f"MIN LT Wheel = {min_wheel:.0f} kg")
+    st.success(f"MAX Static LT Wheel load without impact = {max_wheel:.0f} kg")
+    st.info(f"MIN static LT Wheel load= {min_wheel:.0f} kg")
+    st.success(f"Horizontal load = {Horiz_load:.0f} kg")
+    st.info(f"Longitudinal load= {Longi_load:.0f} kg")
 
 except Exception as e:
     st.error(f"Error: {e}")
