@@ -1,7 +1,7 @@
 import streamlit as st
 
 st.set_page_config(page_title="Code Crane Tools", layout="wide")
-st.title("CranEdge - Crane Design Suite")
+st.title("Code Crane - Crane Design Suite")
 st.markdown("---")
 
 st.write("All your crane calculators at one place.")
