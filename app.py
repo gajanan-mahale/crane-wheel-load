@@ -54,4 +54,4 @@ with tab1:
 
 with tab2:
     st.header("Second App Coming Soon")
-    st.write("Paste your next calculator code here")
+    st.write("----------------------")
