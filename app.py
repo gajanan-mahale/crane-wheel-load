@@ -1,13 +1,14 @@
 import streamlit as st
 import pandas as pd
 
-st.set_page_config(page_title="Codex Crane Tools", layout="wide")
-st.title("Codex Crane - Crane Design Suite")
+st.set_page_config(page_title="SGEOT Crane Tools", layout="wide")
+st.title("SGEOT CRANE WHEEL LOAD CALCULATOR")
 
 tab1, tab2 = st.tabs(["🏗️ Wheel Load", "🔧 Next Tool"])
 
 with tab1:
-    st.header("Single Girder Wheel Load - M5")
+    st.header("SGEOT CRNAE Wheel LOAD GENERATOR FOR CLASS OF DUTY M5")
+    st.write("BY GAJANAN MAHALE")
     try:
         df = pd.read_excel("crane_data.xlsx", sheet_name="SG TABLE")
         df = df[['SWL_kg','Span_M','Girder_kg','Crane_kg']].dropna()
